@@ -34,7 +34,7 @@ Although, the backend is live now on `marvel-api-xhvk.onrender.com/characters`
 ```bash
 cd frontend
 npm install
-npm run dev
+node index.js
 ```
 
 The React app will run on `http://localhost:5173`.
