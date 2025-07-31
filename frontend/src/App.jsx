@@ -158,15 +158,15 @@ function App() {
         {/* Statistiques */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Total Personnages</h3>
+            <h3 className="text-lg font-medium text-gray-500 mb-2">Total Personnages</h3>
             <p className="text-3xl font-bold text-gray-900">{characters.length}</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Résultats</h3>
+            <h3 className="text-lg font-medium text-gray-500 mb-2">Résultats</h3>
             <p className="text-3xl font-bold text-gray-900">{filteredCharacters.length}</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-sm font-medium text-gray-500 mb-2">Univers</h3>
+            <h3 className="text-lg font-medium text-gray-500 mb-2">Univers</h3>
             <p className="text-3xl font-bold text-gray-900">{uniqueUniverses}</p>
           </div>
         </div>
@@ -199,18 +199,18 @@ function App() {
                 className="bg-white p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900">{character.name}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">{character.name}</h3>
                   <span className="text-xs text-gray-500">#{character.id}</span>
                 </div>
                 <div className="space-y-2 mb-4">
-                  <p className="text-sm text-gray-600">
+                  <p className="text-lg text-gray-600">
                     <span className="font-medium">Nom réel:</span> {character.realName}
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-lg text-gray-600">
                     <span className="font-medium">Univers:</span> {character.universe}
                   </p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex space-x-4">
                   <button
                     onClick={() => handleEdit(character)}
                     className="px-3 py-1 text-sm text-white bg-blue-600 rounded hover:bg-blue-700 transition"
